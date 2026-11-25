@@ -1,129 +1,200 @@
-\cleardoublepage % memastikan bab baru dimulai di halaman ganjil (kanan)
+% ==========================================
+% BAB I PENDAHULUAN
+% ==========================================
+\cleardoublepage
 \chapter{PENDAHULUAN}
-\label{chap:pendahuluan}
-% --- Latar Belakang ---
+\label{chap:I}
+
 \section{Latar Belakang}
-Subbab ini menjelaskan dasar pemikiran, motivasi, kebutuhan, alasan, atau urgensi pemilihan masalah tesis. Subbab ini berisi penjelasan ringkas tentang kondisi atau situasi yang ada saat ini terkait dengan topik yang dibahas. Tujuan utamanya adalah untuk memberikan informasi secukupnya kepada pembaca agar memahami topik yang akan dibahas. Dalam subbab ini, jelaskan hal-hal berikut ini:
-\begin{enumerate}
-\item	Kondisi atau situasi topik yang dibahas beserta permasalahannya, misalnya tentang pengelolaan informasi di fasilitas kesehatan daerah pedesaan saat ini dan masalah yang dihadapi, berdasarkan hasil survei atau wawancara dengan pihak terkait.
-\item	Urgensi atau pentingnya penyelesaian masalah tersebut, misalnya dampak negatif yang ditimbulkan jika masalah tersebut tidak diselesaikan.
-\item	Berbagai solusi yang telah diterapkan maupun solusi yang memungkinkan untuk diterapkan untuk menyelesaikan masalah tersebut, berdasarkan hasil studi literatur, wawancara dengan pihak terkait, atau kunjungan lapangan.
-\item   Kelemahan atau kekurangan dari solusi yang telah diterapkan atau yang memungkinkan untuk diterapkan tersebut, yang menjadi dasar pemikiran dalam merumuskan masalah tesis.
-\end{enumerate}
-Penulisan latar belakang masalah yang baik akan mengantarkan pembaca kepada pemahaman yang jelas tentang topik yang akan dibahas, 
-sehingga pembaca dapat mengikuti pembahasan pada bab atau subbab berikutnya dengan baik. Oleh karena itu, 
-penulis diharapkan melakukan investigasi yang mendalam untuk mengumpulkan fakta-fakta yang relevan dengan topik yang dibahas, 
-baik melalui studi literatur, wawancara dengan pihak terkait, maupun kunjungan lapangan. Hasil studi ini dijelaskan secara \emph{ringkas} di dalam subbab ini.
-Penjelasan hasil studi literatur yang komprehensif dapat dijabarkan di Bab II secara sistematis.
+\label{sec:I.1}
 
-Dalam menulis latar belakang, hindari penulisan yang bersifat terlalu umum atau terlalu luas cakupannya sehingga sulit untuk dihubungkan dengan topik yang dibahas dalam tesis,
-seperti:
-\begin{enumerate}
-    \item "Pentingnya teknologi informasi dalam kehidupan manusia."
-    \item "Perkembangan pesat teknologi \emph{artificial intelligence} di era digital."
-    \item "Tantangan dalam pengelolaan data besar (\emph{big data}) di berbagai sektor industri."
-    \item "Peran teknologi informasi dalam meningkatkan kualitas layanan kesehatan."
-\end{enumerate}
-Penulisan yang terlalu umum atau luas cakupannya akan menyulitkan penulis dalam merumuskan masalah, tujuan, metodologi, dan evaluasi tesis.
+Kementerian Pertahanan Republik Indonesia (Kemhan RI) merupakan kementerian yang menyelenggarakan urusan pemerintahan di bidang pertahanan \cite{Permenhan13Tahun2026}. Berdasarkan Undang-Undang Nomor 3 Tahun 2002 tentang Pertahanan Negara, Menteri Pertahanan membantu Presiden dalam merumuskan kebijakan umum pertahanan negara dan menetapkan kebijakan penyelenggaraan pertahanan negara. Menteri juga menetapkan kebijakan penganggaran, pengadaan, perekrutan, pengelolaan sumber daya nasional, serta pembinaan teknologi dan industri pertahanan \cite{UU3Tahun2002}. Untuk menjalankan mandat tersebut, Kemhan RI membutuhkan data dan informasi pertahanan yang lengkap, akurat, dan mutakhir, seperti data personel, alutsista, logistik, anggaran, dan informasi ancaman.
 
-Jika ada referensi yang digunakan dalam penulisan latar belakang, cantumkan referensi tersebut dengan benar menggunakan \texttt{biblatex} sesuai dengan contoh penulisan kutipan dan daftar pustaka yang telah disediakan dalam template ini.
-Sebagai contoh, pada paragraf berikut ini terdapat kutipan dari dua referensi yang berbeda \autocite{laudon2020, pressman2019}. 
-Ada dua format penulisan sitasi yang dapat digunakan, yaitu format naratif dan format parentetik.
-Contoh penulisan kutipan dengan format naratif adalah sebagai berikut:
-\begin{displayquote}
-Menurut \textcite{laudon2020}, sistem informasi adalah kombinasi dari teknologi informasi dan aktivitas orang yang menggunakan teknologi tersebut untuk mendukung operasi dan manajemen organisasi.
-\end{displayquote}
-Contoh penulisan kutipan dengan format parentetik adalah sebagai berikut:
-\begin{displayquote}
-    Sistem informasi merupakan kombinasi dari teknologi informasi dan aktivitas orang yang menggunakan teknologi tersebut untuk mendukung operasi dan manajemen organisasi \autocite{laudon2020}.
-\end{displayquote}
-% --- Rumusan Masalah ---
+Kebutuhan tersebut semakin mendesak karena kondisi saat ini ditandai oleh ancaman yang bersifat multidimensi, mulai dari ancaman militer konvensional hingga ancaman siber dan disrupsi informasi. Keunggulan pertahanan tidak lagi semata ditentukan oleh jumlah alutsista dan personel, tetapi juga oleh kemampuan mengintegrasikan sistem dan pengambilan keputusan secara cepat berbasis data \cite{USDoD2019,Koch2015,USDoD2022}. Di tingkat nasional, Pemerintah juga mendorong setiap kementerian, termasuk Kemhan RI, untuk membangun ekosistem digital yang terintegrasi melalui Sistem Pemerintahan Berbasis Elektronik (SPBE) \cite{Perpres95Tahun2018}, percepatan transformasi digital \cite{Perpres82Tahun2023}, dan RPJPN 2025–2045 \cite{UU59Tahun2024}. Dengan demikian, Kemhan RI memiliki dua kebutuhan sekaligus. Sebagai kementerian, Kemhan RI wajib menyusun Arsitektur SPBE yang berorientasi pada layanan administrasi pemerintahan. Sebagai institusi pertahanan, Kemhan RI juga perlu menjangkau kapabilitas operasional pertahanan, terutama keterpaduan komando dan kendali lintas matra TNI.
+
+Dalam praktiknya, transformasi digital di lingkungan Kemhan RI masih menghadapi permasalahan utama berupa sistem yang berkembang secara terpisah (\textit{silo}) di setiap satuan kerja dan matra. \textit{Silo} tersebut terjadi pada beberapa lapisan Kemhan RI, yaitu:
+\begin{enumerate}[label=\arabic*.]
+\item Lapisan bisnis dan tata kelola. Pengelolaan data, sistem informasi, dan infrastruktur teknologi informasi dan komunikasi telah ditetapkan sebagai tugas Pusat Data dan Informasi \cite{Permenhan30Tahun2025}. Namun, mandat unit tersebut bersifat menjalankan sistem yang sudah ada (\textit{run-the-engine}), dan belum ada fungsi yang mengorkestrasi perubahan lintas organisasi (\textit{change-the-business}). Akibatnya, setiap satuan kerja merencanakan dan mengembangkan sistemnya sendiri.
+\item Lapisan data dan aplikasi. Inventarisasi aplikasi Kemhan RI tahun 2025 mencatat 247 aplikasi, terdiri atas 176 aplikasi umum dan 71 aplikasi khusus. Aplikasi khusus dikembangkan per satuan kerja, dan sebagian memiliki fungsi serupa, antara lain pada kepegawaian, pembelajaran daring, dan persuratan. Meskipun kebijakan Satu Data Pertahanan telah ditetapkan \cite{Permenhan1Tahun2023}, data masih terkotak per aplikasi karena belum tersedia kamus data, klasifikasi data, dan kanal berbagi pakai.
+\item Lapisan teknologi. Seluruh layanan bertumpu pada satu \textit{Data Center} tanpa \textit{Disaster Recovery Center}, sehingga menjadi titik tunggal kegagalan (\textit{single point of failure}). Lapisan keamanan juga masih bersifat parsial, padahal ancaman siber terhadap infrastruktur dan data pertahanan terus meningkat \cite{Permenhan82Tahun2014}.
+\item Lapisan operasional. Komando dan kendali masih dikembangkan per matra. Kondisi ini menyulitkan keterpaduan antara unsur ISR, komando-kendali, dan unsur penindak dalam operasi gabungan.
+\end{enumerate}
+
+Kondisi \textit{silo} pada keempat lapisan tersebut mengakibatkan beberapa hal, yaitu:
+\begin{enumerate}[label=\alph*.]
+\item investasi digital berulang dan penggunaan sumber daya yang tidak efisien;
+\item data sulit dibagi pakai dan diintegrasikan untuk analisis lintas domain;
+\item pengambilan keputusan strategis berjalan lambat;
+\item interoperabilitas rendah, baik antarsatuan kerja maupun antarmatra; dan
+\item layanan dan data pertahanan rentan terhadap gangguan dan serangan siber.
+\end{enumerate}
+
+Permasalahan tersebut terjadi karena Kemhan RI belum memiliki arsitektur yang menjadi acuan dalam membangun sistem secara menyeluruh, mulai dari proses bisnis, data, aplikasi, teknologi, hingga kapabilitas operasional. Indeks SPBE Kemhan RI yang meningkat dari 2,62 pada tahun 2022 menjadi 3,43 pada tahun 2023 dengan predikat Baik \cite{Pusdatin2024}, menunjukkan bahwa tata kelola SPBE telah berjalan. Namun, indeks tersebut tidak dirancang untuk mengukur keterpaduan kapabilitas operasional pertahanan. Oleh karena itu, diperlukan solusi yang mampu menyatukan sisi administratif dan sisi operasional dalam satu arah transformasi.
+
+Salah satu solusi untuk mengatasi permasalahan \textit{silo} adalah pengembangan \textit{Enterprise Architecture} (EA). EA menyelaraskan strategi organisasi dengan proses bisnis, data, aplikasi, dan teknologi secara terstruktur, sehingga setiap pengembangan sistem mengacu pada satu rancangan yang sama. Berbagai penelitian menunjukkan peran EA sebagai instrumen transformasi digital \cite{Syamfithriani2024}, termasuk dalam transformasi organisasi militer \cite{Mattila2022}. Pendekatan ini juga sejalan dengan kewajiban penyusunan Arsitektur SPBE bagi instansi pemerintah \cite{Perpres95Tahun2018}. Agar EA dapat dikembangkan secara terarah, organisasi perlu mengadopsi sebuah \textit{framework} EA yang menjadi panduan pengembangannya.
+
+Beberapa \textit{framework} EA telah dikembangkan khusus untuk lingkungan pertahanan, yaitu DoDAF, MODAF, dan NAF \cite{DoDAF2010v202,Weilkiens2022,NAFv41}. Ketiganya berakar pada C4ISR \textit{Architecture Framework} \cite{C4ISRAWG1998}, sehingga kuat dalam memuat aspek komando, kendali, dan interoperabilitas. Namun, DoDAF dan MODAF pada dasarnya merupakan kerangka deskripsi yang menetapkan apa yang harus didokumentasikan, bukan bagaimana arsitektur dibangun secara bertahap. NAF telah dilengkapi metodologi sejak versi 4, tetapi dirancang untuk interoperabilitas multinasional dan mengikuti kebijakan NATO \cite{NAFv41}.
+
+Di sisi lain, TOGAF merupakan salah satu \textit{framework} EA dengan adopsi terluas dan tersedia secara terbuka untuk penggunaan akademik dan nonkomersial. TOGAF memiliki \textit{Architecture Development Method} (ADM), yaitu metode pengembangan arsitektur yang bertahap dan iteratif \cite{TOGAF2022}. Salah satu karakteristik TOGAF adalah sifatnya yang generik dan fleksibel, sehingga TOGAF mewajibkan penyesuaian (\textit{tailoring}) sejak Fase \textit{Preliminary}. Namun, sifat generik tersebut membuat TOGAF tidak menyediakan muatan pertahanan, seperti domain kapabilitas komando dan kendali, penautan arsitektur dengan doktrin pertahanan, dan pola integrasi lintas matra. Keamanan siber pun masih diperlakukan sebagai \textit{concern} lintas domain \cite{TOGAFRiskSecurity}. Tanpa acuan muatan pertahanan, penyesuaian TOGAF bergantung pada improvisasi setiap arsitek, sehingga arsitektur yang dihasilkan cenderung hanya mencakup sisi administratif. Dengan demikian, perancangan EA menggunakan TOGAF saja belum cukup menjawab kebutuhan Kemhan RI, dan masih dibutuhkan sebuah model rujukan pertahanan yang dapat ditanamkan ke dalam TOGAF.
+
+Model rujukan yang sesuai untuk kebutuhan tersebut adalah C6ISR, yaitu \textit{Command, Control, Communications, Computers, Cyber-Defense, Combat Systems, Intelligence, Surveillance, and Reconnaissance}. C6ISR merupakan perkembangan bertahap dari konsep komando dan kendali (C2) melalui C4ISR dan C5ISR \cite{Petrovski2023,Todorovic2025}. Dibandingkan C4ISR, C6ISR menambahkan unsur \textit{cyber-defense} sebagai domain operasi \cite{NATO2016Warsaw}, serta unsur \textit{combat systems} yang melengkapi siklus operasi dari pengindraan dan pengambilan keputusan hingga penindakan beserta umpan baliknya.
+
+Dengan adanya TOGAF sebagai \textit{framework} yang unggul dalam metode pengembangan arsitektur, serta C6ISR sebagai model rujukan kapabilitas pertahanan, penelitian ini memodifikasi \textit{framework} TOGAF untuk Kemhan RI yang berbasis pada C6ISR. Modifikasi dilakukan dengan mempertahankan siklus ADM, menambahkan Fase \textit{C6ISR Architecture} sebagai domain arsitektur tersendiri, serta menyesuaikan muatan fase lainnya agar sesuai dengan kebutuhan pertahanan. \textit{Framework} hasil modifikasi tersebut selanjutnya disebut TOGAF Pertahanan Indonesia, kemudian diterapkan pada Kemhan RI untuk menghasilkan arsitektur transformasi digital beserta \textit{roadmap} implementasinya.
+
 \section{Rumusan Masalah}
-Subbab ini berisi masalah utama yang dibahas dalam tesis. Perumusan masalah yang baik memiliki struktur sebagai berikut:
-\begin{enumerate}
-\item	Pokok persoalan dari kondisi atau situasi yang ada saat ini. Dengan kata lain, jelaskan kelemahan atau kekurangan dari kondisi, situasi, atau solusi yang dijelaskan pada latar belakang. Ini merupakan pokok rumusan masalah.
-\item	Elaborasi lebih lanjut urgensi penyelesaian masalah tersebut (mengapa penting untuk diselesaikan dan akibat yang dapat terjadi jika tidak diselesaikan).
-\item	Usulan singkat terkait dengan solusi yang ditawarkan untuk menyelesaikan persoalan.
-Penting untuk diperhatikan bahwa persoalan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan di bab Evaluasi (apakah terselesaikan atau tidak).
-\end{enumerate}
-Hindari penulisan masalah yang terlalu umum atau terlalu luas cakupannya sehingga sulit untuk diselesaikan dalam jangka waktu pelaksanaan tesis, 
-seperti:
-\begin{enumerate}
-    \item "Bagaimana cara meningkatkan kualitas layanan kesehatan di Indonesia?"
-    \item "Bagaimana cara mengoptimalkan penggunaan energi di perkotaan?"
-    \item "Bagaimana cara mengurangi kemacetan lalu lintas di kota besar?"
-    \item "Bagaimana cara membangun sistem irigasi sawah menggunakan \emph{AI}?"
-\end{enumerate}
-Rumusan masalah yang baik dan spesifik akan memudahkan penulis dalam menentukan tujuan, metodologi, dan evaluasi tesis.
+\label{sec:I.2}
 
-Selain itu, hindari menuliskan pertanyaan yang merupakan sebuah keniscayaan yang harus dijawab atau dikerjakan 
-dalam pelaksanaan tesis, seperti:
-\begin{enumerate}
-    \item "Bagaimana cara melakukan analisis kebutuhan sistem informasi rumah sakit?"
-    \item "Bagaimana cara merancang basis data untuk aplikasi X?"
-    \item "Bagaimana cara mengimplementasikan \textit{large language model} untuk deteksi penyakit Y?"
-    \item "Bagaimana cara menguji sistem penyiraman tanaman berbasis IoT yang akan dibuat?"
-\end{enumerate}
-Kegiatan analisis, perancangan, implementasi, dan pengujian merupakan tahapan yang harus dilakukan dalam pelaksanaan tesis,
-sehingga pertanyaan-pertanyaan tersebut tidak perlu dimasukkan ke dalam rumusan masalah.
-
-% --- Tujuan ---
-\section{Tujuan}
-Tuliskan \textbf{tujuan utama} dan/atau tujuan detail yang akan dicapai dalam pelaksanaan tesis. 
-Fokuskan isi subbab ini pada hasil akhir yang ingin diperoleh setelah tesis diselesaikan 
-terkait dengan penyelesaian persoalan pada rumusan masalah. 
-Penting untuk diperhatikan bahwa tujuan yang dideskripsikan pada subbab ini akan dipertanggungjawabkan 
-di akhir pelaksanaan tesis. Oleh karena itu, tuliskan juga \emph{kriteria keberhasilan} tesis ini.
-
-% --- Batasan Masalah ---
-\section{Ruang Lingkup, Asumsi, dan Batasan Masalah}
-Tuliskan ruang lingkup, asumsi, dan batasan-batasan yang diambil dalam pelaksanaan tesis. Batasan ini dapat dihindari (bersifat opsional, tidak perlu ada) jika topik atau judul tesis dibuat cukup spesifik.
-
-\section{Hipotesis}
-Tuliskan hipotesis yang akan diuji dalam pelaksanaan tesis. 
-Hipotesis ini merupakan pernyataan yang dapat diuji kebenarannya melalui proses pelaksanaan tesis, 
-terutama pada tahap evaluasi. Hipotesis yang baik memiliki karakteristik sebagai berikut:
-\begin{enumerate}
-    \item Spesifik: Hipotesis harus jelas dan spesifik, sehingga dapat diuji dengan cara yang terukur.
-    \item Terukur: Hipotesis harus dapat diuji dengan data atau informasi yang dapat diukur, sehingga dapat dinilai kebenarannya.
-    \item Relevan: Hipotesis harus relevan dengan topik tesis dan dapat memberikan kontribusi yang signifikan terhadap penyelesaian masalah yang dibahas.
-    \item Dapat diuji: Hipotesis harus dapat diuji melalui proses pelaksanaan tesis, terutama pada tahap evaluasi, sehingga dapat dinilai kebenarannya.
+Berdasarkan latar belakang tersebut, permasalahan utama penelitian ini adalah belum tersedianya \textit{framework} EA yang mampu memenuhi kewajiban Arsitektur pemerintahan berbasis elektronik sekaligus menjangkau kapabilitas operasional pertahanan Kemhan RI. Permasalahan tersebut dirumuskan dalam tiga pertanyaan penelitian (\textit{research question}, RQ) berikut:
+\begin{enumerate}[label=RQ\arabic*:, leftmargin=*]
+\item Bagaimana memodifikasi TOGAF ADM berbasis C6ISR agar sesuai dengan kebutuhan arsitektur enterprise Kemhan RI?
+\item Bagaimana penerapan \textit{framework} hasil modifikasi pada Kemhan RI dalam menghasilkan arsitektur transformasi digital beserta \textit{roadmap} implementasinya?
+\item Sejauh mana \textit{framework} hasil modifikasi dan arsitektur yang dihasilkannya layak diterapkan, serta apa kontribusinya dibandingkan TOGAF ADM standar?
 \end{enumerate}
 
-Hipotesis diperoleh dari premis-premis yang ada pada latar belakang dan rumusan masalah. 
-Oleh karena itu, tuliskan dulu premis-premis yang menentukan hipotesis tersebut sebelum menuliskan hipotesisnya.
+\section{Tujuan Penelitian}
+\label{sec:I.3}
 
-
-
-% --- Metodologi Pengerjaan TA ---
-\section{Metodologi}
-Tuliskan semua tahapan spesifik yang akan dilalui selama pelaksanaan tesis. 
-Ada beberapa pendekatan metodologi yang dapat digunakan dalam pelaksanaan tesis sesuai dengan topik yang dibahas, 
-misalnya Design Science Research Methodology (DSRM), Design Research Methodology (DRM), Cross-Industry Standard Process for Data Mining (CRISP-DM), dan sebagainya.
-
-Secara umum,  metodologi pengerjaan tesis meliputi tahapan, langkah-langkah, atau tata cara melakukan:
-\begin{enumerate}
-\item	Investigasi pengumpulan fakta di latar belakang untuk merumuskan masalah.
-\item	Pencarian, pengelompokan, dan penapisan literatur atau sumber informasi untuk mengumpulkan informasi yang relevan tentang topik yang diangkat, termasuk teori (konsep atau teori apa saja yang perlu dicari), hal-hal yang telah dicapai oleh orang lain (cara mencari dan kata kuncinya), dan berbagai informasi pendukung, untuk mencari solusi terhadap masalah yang dibahas. Gunakan metodologi yang tepat dalam menggali informasi dan dokumentasikan prosesnya (termasuk rekaman wawancara atau survei) di dalam Lampiran, termasuk tautan ke video atau foto. Hasil penggalian informasi ini akan dijelaskan secara komprehensif di Bab II Studi Literatur.
-\item   Analisis kebutuhan berdasarkan hasil investigasi dan studi literatur. Jelaskan metode yang digunakan untuk melakukan analisis kebutuhan, misalnya wawancara, survei, observasi, atau studi kasus. Hasil analisis kebutuhan ini akan dijelaskan secara rinci di bab berikutnya.
-\item   Perancangan solusi berdasarkan hasil analisis kebutuhan. Jelaskan metode atau tahapan perancangan yang digunakan, dengan abstraksi yang bertahap dari generik ke spesifik, misalnya dengan pendekatan \textit{C4 model}. Selain itu, gunakan alat bantu penggambaran diagram yang tepat, misalnya menggunakan diagram UML, SySML, ERD, atau yang lainnya. 
-\item   Jika ada implementasi terhadap hasil rancangan, jelaskan teknologi dan alat bantu yang digunakan untuk mengimplementasikan rancangan. 
-\item   Evaluasi terhadap solusi yang telah diimplementasikan. Jelaskan metode pengujian, metrik evaluasi, atau studi kasus yang digunakan untuk menilai keberhasilan solusi. 
-\item   Penarikan kesimpulan dan saran berdasarkan hasil pelaksanaan tesis berdasarkan hasil evaluasi.   
-\vfill % memaksa konten di atas untuk berada di bagian atas halaman dan menyisakan ruang kosong di bawah konten ini akibat berakhirnya section ini
+Tujuan penelitian ini adalah sebagai berikut:
+\begin{enumerate}[label=\arabic*.]
+\item Merancang modifikasi TOGAF ADM berbasis C6ISR yang sesuai dengan kebutuhan Kemhan RI, selanjutnya disebut TOGAF Pertahanan Indonesia.
+\item Menerapkan TOGAF Pertahanan Indonesia pada Kemhan RI untuk menghasilkan arsitektur transformasi digital beserta \textit{roadmap} implementasi 2026–2030.
+\item Mengevaluasi kelayakan \textit{framework} dan arsitektur yang dihasilkan, serta kontribusinya dibandingkan TOGAF ADM standar.
 \end{enumerate}
 
-% --- Sistematika Penulisan ---
+\section{Manfaat Penelitian}
+\label{sec:I.4}
+
+Penelitian ini diharapkan memberikan manfaat sebagai berikut:
+\begin{enumerate}[label=\arabic*.]
+\item Bagi pengembangan ilmu, penelitian ini menghasilkan modifikasi TOGAF berbasis C6ISR yang terdokumentasi dan dapat diulang, sehingga dapat menjadi rujukan pengembangan EA di sektor pertahanan.
+\item Bagi Kemhan RI, penelitian ini menyediakan \textit{framework} serta arsitektur transformasi digital beserta \textit{roadmap} implementasinya sebagai acuan dalam mengintegrasikan sistem, data, serta komando dan kendali.
+\end{enumerate}
+
+\section{Ruang Lingkup Penelitian}
+\label{sec:I.5}
+
+Ruang lingkup penelitian ini adalah sebagai berikut:
+\begin{enumerate}[label=\arabic*.]
+\item Penelitian ini memodifikasi TOGAF ADM agar sesuai dengan kebutuhan pertahanan. Modifikasi ini mencakup penyesuaian masukan, langkah kerja, dan keluaran pada setiap fase serta penambahan fase C6ISR.
+\item Penerapan dilakukan dari Fase \textit{Preliminary} hingga Fase \textit{Migration Planning}. Fase \textit{Implementation Governance} dan \textit{Architecture Change Management} hanya dirancang dan tidak diterapkan.
+\item Penelitian tidak mencakup aspek rahasia militer dan operasi tempur, kecuali pada Fase \textit{C6ISR Architecture} yang memodelkan keterhubungan komando dan kendali dengan sistem tempur secara konseptual berdasarkan doktrin, kebijakan, dan sumber terbuka. Fase tersebut dirancang dari sudut pandang Kemhan RI sebagai penyelenggara kebijakan dan standar, sedangkan komando dan pengendalian operasional tetap berada pada Mabes TNI.
+\item Evaluasi bersifat \textit{ex-ante}, yaitu menilai rancangan sebelum diimplementasikan, sehingga dampak implementasi arsitektur tidak diukur.
+\end{enumerate}
+
+\section{Hasil / Keluaran yang Diharapkan}
+\label{sec:I.6}
+
+Berdasarkan tujuan penelitian, hasil yang diharapkan adalah sebagai berikut:
+\begin{enumerate}[label=\arabic*.]
+\item TOGAF Pertahanan Indonesia, yaitu \textit{framework} hasil modifikasi TOGAF ADM yang memuat Fase \textit{C6ISR Architecture} sebagai fase baru dan penyesuaian isi lima fase lainnya agar sesuai dengan kebutuhan pertahanan Indonesia.
+\item Arsitektur transformasi digital Kemhan RI yang meliputi arsitektur bisnis, data, aplikasi, teknologi, dan C6ISR, beserta paket pekerjaan, \textit{roadmap}, dan rencana migrasi 2026–2030.
+\item Hasil evaluasi kelayakan \textit{framework} dan arsitektur berdasarkan \textit{Enterprise Architecture Scorecard}, penilaian pakar, dan perbandingan dengan TOGAF ADM standar, dengan target kategori Baik pada \textit{Enterprise Architecture Scorecard} dan kategori Layak pada penilaian pakar.
+\end{enumerate}
+
+\section{Metodologi Penelitian}
+\label{sec:I.7}
+
+\subsection{Pendekatan Penelitian}
+\label{sec:I.7.1}
+
+Penelitian ini menggunakan pendekatan \textit{Design Science Research Methodology} (DSRM). Pendekatan ini bertujuan menghasilkan artefak yang dapat digunakan untuk menyelesaikan permasalahan nyata dan dapat diuji kegunaannya. Artefak tersebut dapat berupa konstruk, model, metode, atau instansiasi \cite{Hevner2004}. Dalam penelitian ini, artefak utama berupa metode, yaitu TOGAF Pertahanan Indonesia, sedangkan arsitektur transformasi digital Kemhan RI merupakan instansiasi yang digunakan untuk mendemonstrasikan metode tersebut. DSRM dipilih karena \textit{framework} hasil modifikasi perlu dirancang berdasarkan kebutuhan, didemonstrasikan pada kondisi nyata, dan dievaluasi oleh pakar.
+
+\subsection{Tahapan Penelitian}
+\label{sec:I.7.2}
+
+Penelitian ini mengikuti enam tahapan DSRM menurut \textcite{Peffers2007}, yaitu sebagai berikut.
+
+\subsubsection{Tahap 1 – Problem Identification and Motivation}
+\label{sec:I.7.2.1}
+
+Tahap ini mengidentifikasi permasalahan dan urgensi penelitian melalui analisis dokumen dan regulasi, wawancara dengan unit kerja Kemhan RI, serta kajian penelitian terdahulu. Hasilnya adalah permasalahan \textit{silo} pada lapisan bisnis, data dan aplikasi, teknologi, serta operasional Kemhan RI, dan belum tersedianya \textit{framework} EA yang menjangkau sisi administratif sekaligus sisi operasional pertahanan.
+
+\subsubsection{Tahap 2 – Defining the Objectives for a Solution}
+\label{sec:I.7.2.2}
+
+Tahap ini menetapkan sasaran yang harus dipenuhi oleh \textit{framework} hasil modifikasi. Sasaran diturunkan dari tiga sumber, yaitu karakteristik domain pertahanan, regulasi nasional, dan praktik terbaik internasional, kemudian dirumuskan sebagai kebutuhan \textit{framework}. Secara ringkas, \textit{framework} harus mempertahankan metode ADM yang bertahap dan iteratif, mengakomodasi C6ISR sebagai domain arsitektur, menanamkan keamanan siber sejak perancangan, mendukung interoperabilitas lintas satuan kerja dan matra, serta tetap selaras dengan SPBE.
+\begin{landscape}
+
+\subsubsection{Tahap 3 – Design and Development}
+\label{sec:I.7.2.3}
+
+Tahap ini merancang TOGAF Pertahanan Indonesia, TOGAF ADM digunakan sebagai dasar, kemudian ditambahkan Fase \textit{C6ISR Architecture} sebagai fase baru dan disesuaikan muatan lima fase lainnya.Hasilnya disajikan pada Tabel~\ref{tab:I.1}.
+\begingroup\small\setstretch{1.0}
+\begin{longtable}{@{}>{\raggedright\arraybackslash}p{0.044\linewidth}>{\raggedright\arraybackslash}p{0.170\linewidth}>{\raggedright\arraybackslash}p{0.244\linewidth}>{\raggedright\arraybackslash}p{0.292\linewidth}>{\raggedright\arraybackslash}p{0.176\linewidth}@{}}
+\caption{Fase TOGAF Pertahanan Indonesia dalam Lingkup Penelitian}\label{tab:I.1}\\
+\toprule
+\textbf{No.} & \textbf{Tahapan TOGAF} & \textbf{Tujuan Utama} & \textbf{Aktifitas Kunci} & \textbf{Hasil Akhir}\\
+\midrule
+\endfirsthead
+\multicolumn{5}{@{}l}{\small\itshape \tablename\ \thetable{} (lanjutan)}\\
+\toprule
+\textbf{No.} & \textbf{Tahapan TOGAF} & \textbf{Tujuan Utama} & \textbf{Aktifitas Kunci} & \textbf{Hasil Akhir}\\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\centering\arraybackslash 1 & \centering\arraybackslash 2 & \centering\arraybackslash 3 & \centering\arraybackslash 4 & \centering\arraybackslash 5\\
+\centering\arraybackslash 1 & \textit{Preliminary Phase} (Δ) & Menetapkan fondasi pengembangan arsitektur, yaitu ruang lingkup, prinsip, pemangku kepentingan, dan tata kelola arsitektur. & \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menautkan doktrin, strategi pertahanan, dan regulasi nasional sebagai masukan.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menetapkan sembilan prinsip arsitektur Pertahanan Indonesia.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menetapkan ruang lingkup arsitektur dan mengidentifikasi pemangku kepentingan.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menetapkan tata kelola dan repositori arsitektur. & Prinsip arsitektur, ruang lingkup, peta pemangku kepentingan, dan model tata kelola arsitektur.\\
+\centering\arraybackslash 2 & \textit{Architecture Vision} (Δ) & Merumuskan visi dan tujuan arsitektur yang berorientasi pada pertahanan cerdas (\textit{smart defence}). & \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menyusun visi, misi, dan tujuan arsitektur.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Mengidentifikasi pendorong dan kendala transformasi.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menilai kapabilitas, kesiapan, dan risiko transformasi.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menyusun konsep solusi dan \textit{Statement of Architecture Work}. & Visi arsitektur dan \textit{Statement of Architecture Work}.\\
+\centering\arraybackslash 3 & \textit{Business Architecture} (Δ) & Merancang struktur organisasi dan kapabilitas bisnis yang mendukung komando-kendali serta kolaborasi lintas satuan. & \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menganalisis struktur organisasi dan tata kelola.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menyusun \textit{value stream} dan peta kapabilitas.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Merancang struktur organisasi dan peta kapabilitas target\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menganalisis kesenjangan dan menyusun \textit{roadmap}. & Peta kapabilitas dan arsitektur bisnis target.\\
+\centering\arraybackslash 4 & \textit{Information Systems Architecture} (Δ) & Merancang arsitektur data dan aplikasi yang terintegrasi dan aman. & \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menyusun model entitas, klasifikasi kerahasiaan data, kamus data, serta kepemilikan data.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menganalisis portofolio dan integrasi aplikasi serta melakukan rasionalisasi.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Merancang arsitektur data dan aplikasi target beserta interoperabilitasnya.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menganalisis kesenjangan dan menyusun \textit{roadmap}. & Arsitektur data dan arsitektur aplikasi target.\\
+\centering\arraybackslash 5 & \textit{Technology Architecture} (Δ) & Merancang infrastruktur teknologi dan fondasi keamanan siber bagi ekosistem digital pertahanan. & \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menganalisis arsitektur teknologi \textit{baseline}.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menetapkan prinsip dan standar teknologi.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Merancang arsitektur teknologi target dan lapisan keamanan.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menganalisis kesenjangan dan menyusun \textit{roadmap}. & Arsitektur teknologi target dan arsitektur keamanan.\\
+\centering\arraybackslash 6 & \textit{C6ISR Architecture} (+) & Merancang kapabilitas C6ISR yang mengintegrasikan ISR, komando-kendali, dan unsur penindak untuk mendukung operasi lintas matra. & \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Mengidentifikasi kebutuhan operasional dan arsitektur C6ISR \textit{baseline}.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menyusun peta kapabilitas C6ISR.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Merancang arsitektur target per lapisan (\textit{Command \& Control}, \textit{Computers}, \textit{Communications}, \textit{Cyber Defense}, \textit{Combat Systems}, dan ISR), termasuk skema komunikasi PACE.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menganalisis kesenjangan dan menyusun \textit{roadmap}. & Arsitektur C6ISR target.\\
+\centering\arraybackslash 7 & \textit{Opportunities \& Solutions} & Mengonsolidasikan kesenjangan seluruh domain menjadi paket pekerjaan yang siap diimplementasikan. & \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Mengidentifikasi atribut perubahan dan kendala implementasi.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Mengonsolidasikan kesenjangan lintas domain.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Merumuskan paket pekerjaan dan ketergantungannya.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menilai kesiapan dan risiko serta menyusun arsitektur transisi. & Paket pekerjaan, arsitektur transisi, dan \textit{roadmap} arsitektur.\\
+\centering\arraybackslash 8 & \textit{Migration Planning} & Menyusun rencana implementasi dan migrasi transformasi digital secara bertahap. & \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menetapkan model tata kelola implementasi.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menilai nilai manfaat dan kebutuhan sumber daya.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menetapkan prioritas paket pekerjaan.\par \hangindent=1.1em\hangafter=1 \makebox[1.1em][l]{--}Menyusun rencana implementasi dan migrasi 2026–2030 beserta indikator keberhasilan. & \textit{Roadmap} implementasi dan rencana migrasi 2026–2030.\\
+\end{longtable}
+\endgroup
+
+Keterangan: Δ = muatan fase disesuaikan; + = fase baru; tanpa tanda = mengikuti TOGAF ADM standar.
+
+Tabel~\ref{tab:I.1} menunjukkan bahwa Fase \textit{C6ISR Architecture} merupakan fase baru, sedangkan muatan pertahanan pada Fase \textit{Preliminary} hingga \textit{Technology Architecture} ditambahkan melalui penyesuaian. Fase \textit{Opportunities \& Solutions} dan \textit{Migration Planning} mengikuti TOGAF ADM standar dengan tambahan masukan dari Fase \textit{C6ISR Architecture.}
+\end{landscape}
+
+\subsubsection{Tahap 4 – Demonstration}
+\label{sec:I.7.2.4}
+
+Tahap ini menerapkan TOGAF Pertahanan Indonesia pada Kemhan RI dari Fase \textit{Preliminary} hingga Fase \textit{Migration Planning}.
+
+\subsubsection{Tahap 5 – Evaluation}
+\label{sec:I.7.2.5}
+
+Tahap ini menilai kelayakan \textit{framework} dan arsitektur yang dihasilkan melalui tiga pendekatan berikut:
+\begin{enumerate}[label=\arabic*.]
+\item Evaluasi teoretis menggunakan \textit{Enterprise Architecture Scorecard} yang diisi oleh pakar akademisi untuk menilai kelengkapan dokumentasi arsitektur.
+\item Evaluasi praktis melalui \textit{expert judgement} oleh pakar akademisi, pakar praktisi Kemhan RI, dan pakar mitra, menggunakan FGD dan kuesioner skala Likert 1–5 yang dianalisis dengan rata-rata skor dan indeks Aiken’s V.
+\item Evaluasi komparatif yang membandingkan hasil TOGAF Pertahanan Indonesia dengan TOGAF ADM standar untuk menunjukkan kontribusi komponen hasil modifikasi.
+\end{enumerate}
+
+\subsubsection{Tahap 6 – Communication}
+\label{sec:I.7.2.6}
+
+Tahap ini mengomunikasikan hasil penelitian melalui naskah tesis, dokumen kajian ringkas bagi pakar dan pemangku kepentingan Kemhan RI, serta presentasi kepada Kemhan RI.
+
 \section{Sistematika Penulisan}
-Tuliskan gambaran umum isi dari setiap bab yang ada dalam laporan tesis. Sistematika penulisan ini memberikan panduan bagi pembaca tentang struktur dan alur pembahasan dalam laporan tesis. Berikut adalah contoh sistematika penulisan yang dapat diikuti:
-\begin{enumerate}
-\item	Bab I Pendahuluan: Berisi latar belakang, rumusan masalah, tujuan, batasan masalah, metodologi, dan sistematika penulisan laporan tesis       .
-\item	Bab II Studi Literatur: Berisi kajian pustaka yang relevan dengan topik tesis, termasuk teori-teori, konsep-konsep, dan hasil-hasil penelitian sebelumnya yang                mendukung pelaksanaan tesis.
-\item	Bab III Analisis dan Desain: Berisi penjelasan tentang analisis masalah dan kebutuhan pengguna serta berbagai alternatif solusinya.
-\item   Bab IV Perancangan: Berisi penjelasan tentang perancangan solusi yang diusulkan, misalnya arsitektur sistem, desain basis data, antarmuka pengguna, dan sebagainya.
-\item	Bab V Implementasi: Berisi penjelasan tentang proses implementasi solusi yang diusulkan, termasuk langkah-langkah yang diambil, teknologi yang digunakan, dan hasil yang diperoleh.
-\item	Bab VI Evaluasi: Berisi analisis dan evaluasi terhadap solusi yang diimplementasikan, termasuk metode pengujian, hal-hal yang disiapkan sebelum pengujian, hasil pengujian, dan penilaian kinerja.                  
-\item   Bab VII Kesimpulan dan Saran: Berisi kesimpulan dari hasil pelaksanaan tesis dan saran untuk pengembangan lebih lanjut.
-\item   Daftar Pustaka: Berisi daftar referensi yang digunakan dalam penyusunan laporan tesis.
-\item   Lampiran: Berisi dokumen-dokumen pendukung seperti kode program, data lengkap hasil pengujian, rekaman wawancara, dan lain-lain. 
-\end{enumerate}
+\label{sec:I.8}
+
+Tesis ini terdiri atas enam bab dengan uraian sebagai berikut.
+
+\textbf{Bab I Pendahuluan}
+
+Bab ini berisi latar belakang, rumusan masalah, tujuan, manfaat, ruang lingkup, hasil yang diharapkan, metodologi penelitian, dan sistematika penulisan.
+
+\textbf{Bab II Tinjauan Pustaka}
+
+Bab ini berisi penelitian terdahulu, konsep transformasi digital pertahanan, perkembangan komando dan kendali hingga C6ISR, serta perbandingan \textit{framework} EA yang menjadi dasar pemilihan TOGAF.
+
+\textbf{Bab III Analisis dan Desain}
+
+Bab ini berisi analisis kebutuhan \textit{framework} EA Kemhan RI dan perancangan modifikasi TOGAF ADM berbasis C6ISR menjadi TOGAF Pertahanan Indonesia.
+
+\textbf{Bab IV Implementasi}
+
+Bab ini berisi penerapan TOGAF Pertahanan Indonesia pada Kemhan RI dari Fase \textit{Preliminary} hingga Fase \textit{Migration Planning}, termasuk \textit{roadmap} dan rencana migrasi 2026–2030.
+
+\textbf{Bab V Evaluasi}
+
+Bab ini berisi evaluasi \textit{framework} dan arsitektur melalui \textit{Enterprise Architecture Scorecard}, penilaian pakar, dan perbandingan dengan TOGAF ADM standar.
+
+\textbf{Bab VI Kesimpulan}
+
+Bab ini berisi kesimpulan yang menjawab pertanyaan penelitian serta saran bagi Kemhan RI dan penelitian selanjutnya.

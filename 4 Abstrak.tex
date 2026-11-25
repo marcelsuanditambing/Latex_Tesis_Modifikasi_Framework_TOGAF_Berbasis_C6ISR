@@ -3,42 +3,22 @@
 
 \begin{center}
 
-    \textbf{Implementasi Sistem Smart Scale Berbasis IoT dengan Arsitektur Desentralisasi untuk Optimalisasi Rantai Pasok Jeruk di Tingkat Lapak} \\
+    \textbf{Modifikasi \textit{Framework} TOGAF untuk Kementerian Pertahanan RI\\yang Berbasis pada C6ISR} \\
     \vspace{0.4cm}
     oleh \\
     \vspace{0.4cm}
-    John Doe\\
-    123456789\\
+    Marcel Suandi Tambing\\
+    23524316\\
 \end{center}
 
 
 \begin{spacing}{1.0}
-Proses manual dalam rantai pasok jeruk di tingkat lapak, yang mencakup sortir,
-timbang, dan catat, terbukti tidak efisien, memakan waktu, dan rentan terhadap
-kesalahan. Meskipun solusi berbasis Internet of Things (IoT) dapat mengatasi
-masalah ini, arsitektur terpusat konvensional berbasis cloud justru menimbulkan
-masalah baru berupa latensi tinggi yang menghambat alur kerja real-time.
-Penelitian ini bertujuan untuk merancang dan mengimplementasikan sebuah
-purwarupa sistem smart scale berbasis IoT dengan pendekatan desentralisasi (edge
-computing) untuk meminimalkan latensi dan meningkatkan efisiensi operasional.
-Metode yang digunakan adalah Model Purwarupa, yang diwujudkan dalam bentuk
-perangkat keras dengan arsitektur prosesor ganda (Raspberry Pi 5 dan ESP32) yang
-mampu mengintegrasikan fungsi timbang dan analisis kualitas citra secara
-simultan. Hasil evaluasi menunjukkan bahwa purwarupa dengan arsitektur edge
-computing yang diimplementasikan mampu memberikan respons 43,5\% lebih cepat
-(latensi rata-rata 18,05 detik) dibandingkan dengan simulasi arsitektur terpusat.
-Selain itu, sistem ini berhasil meningkatkan efisiensi waktu kerja secara
-keseluruhan sebesar 58,32\% jika dibandingkan dengan metode manual
-konvensional. Pengujian Penerimaan Pengguna (UAT) yang melibatkan 30
-partisipan juga menunjukkan penerimaan yang sangat positif, dengan skor rata-rata
-untuk kemudahan penggunaan (5,0/5,0), kejelasan antarmuka (4,87/5,0) dan
-persepsi kinerja (4,95/5,0). Kesimpulannya, implementasi sistem smart scale
-dengan arsitektur desentralisasi terbukti merupakan solusi yang valid dan efektif
-untuk menjawab permasalahan latensi dan inefisiensi di lapak. Sistem ini tidak
-hanya unggul secara teknis dalam hal performa, tetapi juga fungsional dan dapat
-diterima dengan baik oleh pengguna akhir, serta berpotensi besar untuk modernisasi
-rantai pasok agribisnis.
+Kementerian Pertahanan Republik Indonesia (Kemhan RI) wajib menyusun Arsitektur Sistem Pemerintahan Berbasis Elektronik (SPBE) sebagai kementerian, sekaligus perlu menjangkau kapabilitas operasional sebagai institusi pertahanan. Namun, sistem di lingkungan Kemhan RI masih berkembang secara terpisah (\textit{silo}) pada lapisan bisnis dan tata kelola, data dan aplikasi, teknologi, serta operasional. Framework \textit{enterprise architecture} (EA) pertahanan, seperti DoDAF, MODAF, dan NAF, kuat dalam muatan pertahanan, tetapi berfokus pada deskripsi arsitektur atau mengikuti kebijakan NATO, sedangkan TOGAF unggul dalam metode, tetapi tidak menyediakan muatan pertahanan. Akibatnya, belum ada framework EA yang memenuhi kedua kebutuhan tersebut.
 
-Kata kunci: Smart Scale, Internet of Things, Edge Computing, Rantai Pasok Jeruk.
+Penelitian ini bertujuan memodifikasi TOGAF \textit{Architecture Development Method} (ADM) berbasis C6ISR (\textit{Command, Control, Communications, Computers, Cyber-Defense, Combat Systems, Intelligence, Surveillance, and Reconnaissance}), menerapkannya pada Kemhan RI, serta mengevaluasi kelayakan dan kontribusinya. Penelitian menggunakan \textit{Design Science Research Methodology} (DSRM). Dari sepuluh kebutuhan framework yang diturunkan dari domain pertahanan, regulasi nasional, dan praktik terbaik, empat kebutuhan belum dipenuhi TOGAF ADM standar, yaitu akomodasi domain C6ISR, keamanan siber sejak perancangan, interoperabilitas lintas entitas, serta keterkaitan dengan doktrin dan strategi pertahanan.
+
+Hasil penelitian berupa TOGAF Pertahanan Indonesia, yaitu TOGAF ADM yang mempertahankan siklus pengembangannya, menambahkan Fase C6ISR \textit{Architecture} sebagai domain arsitektur tersendiri, menyesuaikan muatan lima fase lainnya, serta menetapkan sembilan prinsip arsitektur. Penerapannya pada Kemhan RI dari Fase \textit{Preliminary} hingga \textit{Migration Planning} menghasilkan arsitektur transformasi digital pada lima domain, yaitu bisnis, data, aplikasi, teknologi, dan C6ISR. Arsitektur tersebut antara lain mengusulkan unit \textit{Digital Transformation Officer}, Portal Satu Data Pertahanan, rasionalisasi 71 aplikasi khusus menjadi 41 aplikasi terintegrasi, \textit{Data Center} Utama dan \textit{Disaster Recovery Center} aktif-aktif, serta Tampilan Pemantauan Terpusat lintas matra. Kesenjangan arsitektur dihimpun menjadi delapan paket pekerjaan dalam \textit{roadmap} 2026--2030 dengan tiga tahap migrasi dan delapan indikator dampak.
+
+\vspace{0.4cm}
+\noindent\textbf{Kata kunci:} Arsitektur \textit{enterprise}, C6ISR, Kementerian Pertahanan, TOGAF, transformasi digital.
 \end{spacing}
-
