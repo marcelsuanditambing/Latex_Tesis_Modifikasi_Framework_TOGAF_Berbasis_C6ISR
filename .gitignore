@@ -20,3 +20,6 @@
 
 # File sistem macOS
 .DS_Store
+# File konflik Syncthing (drive S:)
+*.sync-conflict-*
+.stversions/
