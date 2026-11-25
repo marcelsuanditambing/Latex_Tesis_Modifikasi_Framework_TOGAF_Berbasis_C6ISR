@@ -1,0 +1,22 @@
+# File bantu LaTeX (dibuat ulang saat compile)
+*.aux
+*.bbl
+*.bbl-SAVE-ERROR
+*.bcf
+*.blg
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.loa
+*.lol
+*.equ
+*.run.xml
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.xdv
+
+# File sistem macOS
+.DS_Store
