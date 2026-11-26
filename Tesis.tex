@@ -117,6 +117,15 @@
 ]{biblatex-chicago}
 \addbibresource{daftar-pustaka.bib}
 
+% --- Tata letak: cegah baris melampaui margin kanan ---
+\setlength{\emergencystretch}{3em}
+% URL di daftar pustaka boleh dipotong di antara huruf (hindari spasi renggang)
+\setcounter{biburlnumpenalty}{9000}
+\setcounter{biburllcpenalty}{7000}
+\setcounter{biburlucpenalty}{8000}
+% Daftar pustaka rata kiri agar URL panjang tidak membuat spasi renggang
+\appto{\bibsetup}{\raggedright}
+
 % --- Terjemahan istilah daftar pustaka ke Bahasa Indonesia ---
 \DefineBibliographyStrings{english}{
   and          = {dan},
@@ -406,9 +415,9 @@
 
 \input{Bab I - Pendahuluan.tex}
 \input{Bab II - Tinjauan Pustaka.tex}
-% --- Bab berikut dimasukkan bertahap (Tahap 3--4) ---
+% --- Bab berikut dimasukkan bertahap (Tahap 4) ---
 \input{Bab III - Analisis dan Desain.tex}
-% \input{Bab IV - Implementasi.tex}
+\input{Bab IV - Implementasi.tex}
 % \input{Bab V - Evaluasi.tex}
 % \input{Bab VI - Kesimpulan.tex}
 
